@@ -1,4 +1,4 @@
-ls
+ls -lrt
 if [ -d hello-world-war ]
 then
 rm -rf hello-world-war
