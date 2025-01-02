@@ -14,5 +14,11 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
+    stage('Deploy'){
+    steps {   
+    sh 'java -jar hello-world-war-1.0.0.war'
     }
+}
+
+}
 }
