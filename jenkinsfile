@@ -16,7 +16,7 @@ pipeline {
         }
     stage('Deploy'){
     steps {   
-    sh 'cp /opt/jenkins/workspace/Hello_World_pipeline/target/hello-world-war-1.0.0.war /opt/apache-tomcat-10.1.34'
+    sh 'scp /opt/jenkins/workspace/Hello_World_pipeline/target/hello-world-war-1.0.0.war /opt/apache-tomcat-10.1.34'
 
     }
 }
