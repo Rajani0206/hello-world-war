@@ -16,7 +16,7 @@ pipeline {
         }
     stage('Deploy'){
     steps {   
-    sh 'java -jar hello-world-war-1.0.0.war'
+    sh 'java -jar /opt/jenkins/workspace/Hello_World_pipeline/target/hello-world-war-1.0.0.war'
     }
 }
 
