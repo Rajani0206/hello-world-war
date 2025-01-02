@@ -1,14 +1,16 @@
 pipeline {
     agent { label 'slave' }
     stages {
-        stage('Example1') {
+        stage('Checkout') {
           steps {
-                echo 'Hello World'
+                sh 'rm -rf hello-world-war'
+                sh 'git clone https://github.com/Rajani0206/hello-world-war.git'
             }
         }
-        stage('Example2') {
+        stage('Build') {
           steps {
-                echo 'Hello World'
+                sh 'cd hello-world-war'
+                sh 'mvn clean package'
             }
         }
     }
