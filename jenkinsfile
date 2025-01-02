@@ -20,13 +20,19 @@ pipeline {
 
     }
 }
-stage('Send Email') {
-    steps {
-        sh 'mail -s "Pipeline Status" rajanisc15@gmail.com < message.txt' 
-    }
-}
+    post{
+    success{
+    mail to: 'rajanisc15@gmail.com',
+     subject: "Job is successfull",
+     body: "Job is successfull, Thank yu"
 
 }
+ failure{
+    mail to: 'rajanisc15@gmail.com',
+     subject: "Job is failed",
+     body: "Job is failed, Thank yu"
 
 }
-
+}
+}
+}
