@@ -22,11 +22,6 @@ pipeline {
 }
 
 }
-post {
-success {
-mail to: "rajanisc15@gmail.com",
-subject: "Jenkins Job ran successfully"
-body: "Job completed successfully"
+
 }
-}
-}
+
