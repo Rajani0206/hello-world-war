@@ -20,13 +20,14 @@ pipeline {
 
     }
 }
+}
     post{
     success{
     mail to: 'rajanisc15@gmail.com',
      subject: "Job is successfull",
      body: "Job is successfull, Thank yu"
 
-}
+
  failure{
     mail to: 'rajanisc15@gmail.com',
      subject: "Job is failed",
