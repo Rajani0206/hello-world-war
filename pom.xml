@@ -34,8 +34,7 @@
 	</build>
 	<!---add your own sonar account details -->
 	<properties>
-	    <sonar.projectKey>Rajani0206_project1</sonar.projectKey>
-	    <sonar.organization>Rajani0206</sonar.organization>
-	    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-</properties>
+		  <sonar.organization>rajani0206</sonar.organization>
+		  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	</properties>
 </project>
