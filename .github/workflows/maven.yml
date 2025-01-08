@@ -27,6 +27,10 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
+      #Build project
+      - name: Build with maven
+        run: mvn clean package
+
      # Upload the WAR as an artifact using v4
       - name: Upload WAR file to Artifactory
         run: |
