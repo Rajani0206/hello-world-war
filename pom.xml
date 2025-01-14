@@ -10,8 +10,8 @@
 
 	<distributionManagement>
 	    <repository>
-	        <id>central</id>
-	        <name>ip-172-31-32-57-releases</name>
+	        <id>hello_world_war</id>
+	        <name>hello_world_war-libs-release</name>
 	        <url>http://3.109.186.210:8081/artifactory/hello_world_war-libs-release</url>
 	    </repository>
   	</distributionManagement>
