@@ -27,6 +27,20 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
+    - name: Configure Maven settings
+      run: |
+          mkdir -p ~/.m2
+          echo "<settings>
+                  <servers>
+                    <server>
+                      <id>hello-world-war</id>
+                      <username>${{ secrets.ARTIFACTORY_USERNAME }}</username>
+                      <password>${{ secrets.ARTIFACTORY_API_KEY }}</password>
+                    </server>
+                  </servers>
+                </settings>" > ~/.m2/settings.xml   
+        
+
       #Build project
       - name: Build with maven
         run: mvn clean package
