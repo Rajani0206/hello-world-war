@@ -12,7 +12,7 @@
 	    <repository>
 	        <id>hello_world_war</id>
 	        <name>hello_world_war-libs-release</name>
-	        <url>http://http://13.201.70.159:8081/artifactory/hello_world_war-libs-release</url>
+	        <url>http://13.201.70.159:8081/artifactory/hello_world_war-libs-release-local</url>
 	    </repository>
   	</distributionManagement>
 
