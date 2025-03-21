@@ -22,7 +22,7 @@ pipeline {
                 script {
                    
                     sh """
-                    docker build -t ${DOCKER_HUB_REPO}:${IMAGE_TAG} .
+                    docker build -t ${DOCKER_HUB_REPO} .
                     """
                 }
             }
