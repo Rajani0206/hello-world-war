@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     //Define environment variables
-      DOCKER_HUB_REPO = "rajani0602/jenkins_repo"
+      DOCKER_IMAGE = "rajani0206/helloworld-app"
       DOCKER_HUB_CREDENTIALS = "docker-hub-credentials" 
       IMAGE_TAG = "latest" 
       WAR_FILE = "target/helloworld.war" 
