@@ -9,5 +9,5 @@ FROM tomcat:jre8-temurin-focal AS deploy
 COPY --from=builder /app/target/hello-world-war*.war /usr/local/tomcat/webapps/
 
 # Expose Tomcat's default port
-EXPOSE 8080
+EXPOSE 8089
 CMD ["catalina.sh", "run"]
